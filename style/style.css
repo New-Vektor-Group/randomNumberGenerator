@@ -38,14 +38,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*----------------------------------------------------------------------*/
 
 body{
-	background-color: #4a536b !important;
+	background-color: #161616 !important;
 	font-size: 24px !important;
 }
 .main-page{
    height: 100%;
 	padding-top: 5rem;
 	align-items: center;
-	color: #ff9a8d;
+	color: #45ee4e;
 }
 .generator__title{
 	/* font-size: 60px;
