@@ -11,7 +11,7 @@ var draw = function () {
   bg.getContext('2d').fillStyle='#0F0'; //font color
 
   letters.map(function(y, i){
-  text = String.fromCharCode(65+Math.random()*33);
+  text = String.fromCharCode(48+Math.random()*10);
 
   x = i * 10;
 
@@ -21,4 +21,4 @@ var draw = function () {
   });
 };
 
-setInterval(draw, 50);
+setInterval(draw, 65);

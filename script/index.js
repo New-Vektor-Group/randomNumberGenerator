@@ -4,21 +4,24 @@ document.getElementById('generate').onclick = () => {
 
    if(firstNum < lastNum){
       const result = document.getElementById('result'); 
-      const time = 500;
+      // const time = 500; //for  calc delay
       const step = 1; 
    
       const randomNumber = Math.floor(Math.random() * (lastNum - firstNum + 1) + firstNum);
+   
+      let n = 0; //start point
 
-      let n = firstNum; //start point
-
-      let t = Math.round(time / (randomNumber/step)) //delay
+      // let t = Math.abs(Math.round(time / (randomNumber/step)) //delay
+      console.log(Math.pow(randomNumber,randomNumber));
       let interval = setInterval(() => {
-         n = n + step;
+         n = (randomNumber < 0) ? n - step : n + step;
+         
+         
          if(n == randomNumber){
             clearInterval(interval);
          }
          result.innerHTML = n;
-      }, t);
+      }, 1);//t)
          
        
       
