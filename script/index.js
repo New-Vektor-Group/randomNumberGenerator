@@ -1,6 +1,12 @@
 document.getElementById('generate').onclick = () => {
+   let btn = document.getElementById('generate');
+   
+  
+   btn.setAttribute("disabled","");
+
    const firstNum = window.parseInt(document.getElementById('firstNum').value);
    const lastNum = window.parseInt(document.getElementById('lastNum').value);
+
 
    if(firstNum < lastNum){
       const result = document.getElementById('result'); 
@@ -12,7 +18,7 @@ document.getElementById('generate').onclick = () => {
       let n = 0; //start point
 
       // let t = Math.abs(Math.round(time / (randomNumber/step)) //delay
-      console.log(Math.pow(randomNumber,randomNumber));
+      
       let interval = setInterval(() => {
          n = (randomNumber < 0) ? n - step : n + step;
          
@@ -23,10 +29,12 @@ document.getElementById('generate').onclick = () => {
          result.innerHTML = n;
       }, 1);//t)
          
-       
+      
       
    } else{
       result.innerHTML = 'Incorrect interval';
    }
    
+   setTimeout(() =>{btn.removeAttribute("disabled", "");},1200);
+
 }

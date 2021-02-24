@@ -77,6 +77,11 @@ input::-webkit-inner-spin-button {
     -webkit-box-shadow: 0 0 20px #0f0 !important;
     box-shadow: 0 0 20px #0f0 !important;
 }
+.generator__input:hover{
+	border-color: #0f0 !important;
+    -webkit-box-shadow: 0 0 20px #0f0 !important;
+    box-shadow: 0 0 20px #0f0 !important;
+}
 #generate{
 	font-size: 20px;
 	background-color: #0F0; 
