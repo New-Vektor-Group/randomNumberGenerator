@@ -36,5 +36,5 @@ document.getElementById('generate').onclick = () => {
    }
    
    setTimeout(() =>{btn.removeAttribute("disabled", "");},1200);
-
+// !bug!  если вести слишком больше число и оно в цикле  увеличения и снова нажать на кнопку будет плохо))) 
 }
